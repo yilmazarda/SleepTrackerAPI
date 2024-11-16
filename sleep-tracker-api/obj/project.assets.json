@@ -4495,11 +4495,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ardayilmaz/Documents/Angular/SleepTracker/API/sleep-tracker-api/sleep-tracker-api.csproj",
+      "projectUniqueName": "/Users/ardayilmaz/Documents/Github/API/sleep-tracker-api/sleep-tracker-api.csproj",
       "projectName": "sleep-tracker-api",
-      "projectPath": "/Users/ardayilmaz/Documents/Angular/SleepTracker/API/sleep-tracker-api/sleep-tracker-api.csproj",
+      "projectPath": "/Users/ardayilmaz/Documents/Github/API/sleep-tracker-api/sleep-tracker-api.csproj",
       "packagesPath": "/Users/ardayilmaz/.nuget/packages/",
-      "outputPath": "/Users/ardayilmaz/Documents/Angular/SleepTracker/API/sleep-tracker-api/obj/",
+      "outputPath": "/Users/ardayilmaz/Documents/Github/API/sleep-tracker-api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ardayilmaz/.nuget/NuGet/NuGet.Config"

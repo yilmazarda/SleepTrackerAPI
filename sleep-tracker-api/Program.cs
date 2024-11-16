@@ -12,13 +12,14 @@ builder.Services.AddScoped<ISleepRepository, SleepRepository>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngularApp", builder =>
+    options.AddPolicy("AllowSpecificOrigins", policy =>
     {
-        builder.WithOrigins("http://localhost:4200") // Allow Angular app origin
-               .AllowAnyHeader()                     // Allow any headers
-               .AllowAnyMethod();                    // Allow any HTTP method (GET, POST, etc.)
+        policy.WithOrigins("http://localhost:4200", "http://localhost:60280") // Allow Angular app and localhost frontend
+              .AllowAnyMethod()                        // Allow any HTTP method (GET, POST, etc.)
+              .AllowAnyHeader();                       // Allow any headers
     });
 });
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -35,7 +36,7 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
     });
 }
-
+app.UseCors("AllowSpecificOrigins");
 app.UseCors("AllowAngularApp");
 app.MapControllers();
 app.Run();
