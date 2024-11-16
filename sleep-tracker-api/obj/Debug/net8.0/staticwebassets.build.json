@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wHmCl9iyUkLF2/C8jNeeO0e20lIFK4cHnX9tSiB0uX0=",
+  "Source": "sleep-tracker-api",
+  "BasePath": "_content/sleep-tracker-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

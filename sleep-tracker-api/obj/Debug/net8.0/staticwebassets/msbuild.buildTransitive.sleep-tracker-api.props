@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/sleep-tracker-api.props" />
+</Project>
